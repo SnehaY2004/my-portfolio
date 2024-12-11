@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0a0e27; /* Navy blue background */
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .projects-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #4fd1c5; /* Aqua color for the section title */
+            text-transform: uppercase;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #1b2845; /* Darker navy blue for contrast */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .project-card h3 {
+            font-size: 1.8rem;
+            color: #4fd1c5;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 1rem;
+            color: #e0e0e0;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .project-card a {
+            text-decoration: none;
+            color: #4fd1c5;
+            font-weight: bold;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <section id="projects">
+        <div class="projects-container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-grid">
+                <!-- Web Development Project -->
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>Designed and developed a responsive portfolio website using HTML, CSS, and JavaScript. Showcases my skills, services, and projects.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>E-Commerce Website</h3>
+                    <p>Built an e-commerce platform with features like product catalog, user authentication, and payment integration using React and Node.js.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- Machine Learning Projects -->
+                <div class="project-card">
+                    <h3>Image Classifier</h3>
+                    <p>Developed a machine learning model using Python and TensorFlow to classify images into different categories with high accuracy.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Stock Price Predictor</h3>
+                    <p>Implemented a predictive model using ML algorithms to forecast stock prices based on historical data and trends.</p>
+                    <a href="#">View Project</a>
+                    
+                </div>
+            </div>
+        </div>
+        <iframe width="560" height="315"  src="https://www.youtube.com/embed/nogh434ykF0?si=-VAILmI2UoroSEkb" frameborder="0"></iframe>
+        <!-- <div class="iframe"></div> -->
+    </section>
+</body>
+</html>

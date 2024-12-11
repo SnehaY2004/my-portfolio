@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0a0e27; /* Navy blue background */
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contact-container {
+            width: 80%;
+            max-width: 800px;
+            background: #1b2845;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-header h2 {
+            font-size: 2.5rem;
+            color: #4fd1c5;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @media (min-width: 600px) {
+            .contact-row {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        .contact-column {
+            flex: 1;
+            margin: 0 10px;
+            padding: 15px;
+            background: #2a3d63;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-column:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .contact-column h3 {
+            font-size: 1.8rem;
+            color: #4fd1c5;
+            margin-bottom: 10px;
+        }
+
+        .contact-column p {
+            font-size: 1rem;
+            color: #e0e0e0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-header">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="contact-row">
+            <div class="contact-column">
+                <h3>Name</h3>
+                <p>Sneha Yadav</p>
+            </div>
+            <div class="contact-column">
+                <h3>Email</h3>
+                <p>sneha.noob20@gmail.com</p>
+            </div>
+            <div class="contact-column">
+                <h3>Phone</h3>
+                <p>9026673072</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
